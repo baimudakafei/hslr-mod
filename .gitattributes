@@ -1,0 +1,9 @@
+# 本工程为 Windows 专属（zig 交叉编译到 x86_64-windows-gnu）。
+#
+# 统一检出为 CRLF：*.cmd / *.ps1 / *.ini 必须是 CRLF，否则 cmd.exe 与
+# Windows PowerShell 5.1 的解析会出问题；其余文本也一并用 CRLF，避免
+# 不同 git 配置 clone 后行尾来回抖动、diff 里全是噪声。
+* text=auto eol=crlf
+
+# 二进制资源原样保存，不做任何行尾/BOM 处理。
+*.png binary

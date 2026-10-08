@@ -1,0 +1,33 @@
+# ---- 构建产物（一律不入库；发行版走 GitHub Releases / 创意工坊）----
+dist/
+*.dll
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# ---- 构建缓存 ----
+build/zc/
+build/zgc/
+build/*.log
+
+# ---- 本地临时 / 分析中间件 ----
+_scratch/
+_verify*/
+*.tmp
+*.log
+
+# ---- 编辑器与系统 ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 本工具链的工作目录（若把本仓库当工作区打开会自动生成）----
+.workbuddy/
+_pending-delete/
